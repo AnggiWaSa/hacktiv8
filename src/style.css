@@ -292,6 +292,7 @@ footer {
 }
 
 
+
 /* main */
 main {
     height: 100%;
@@ -307,7 +308,7 @@ main section h2 {
     background-color: var(--color-light);
     border: var(--border-1px-dark);
     border-radius: var(--size-large);
-    margin: auto 20%;
+    margin: var(--size-large) 20%;
     padding: var(--size-small);
     font-size: var(--size-medium);
     text-align: center;
@@ -329,4 +330,72 @@ main section div {
     display: flex;
     gap: var(--size-medium);
     
+}
+
+.about {
+    max-height: 400px;
+    width: fit-content;
+}
+
+.about .about-img {
+    border: var(--border-1px-dark);
+    border-radius: var(--size-small);
+    object-fit: contain;
+}
+
+.about .about-texts {
+    flex-direction: column;
+}
+
+.experience, .education {
+    display: flex;
+    flex-direction: column;
+}
+
+.lists {
+    flex-direction: column;
+    border: var(--border-1px-dark);
+    border-radius: var(--size-small);
+    align-items: center;
+    padding: var(--size-small);
+    gap: var(--size-smaller);
+}
+
+.lists .lists-title {
+    font-size: var(--size-medium);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.skills, .interests {
+    /*! flex-direction: row; */
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    
+    flex-flow: wrap;
+}
+
+.container .cards {
+    flex-direction: column;
+    padding: var(--size-medium);
+    border: var(--border-1px-dark);
+    border-radius: var(--size-small);
+    width: 192px;
+    align-items: center;
+    font-size: ;
+}
+
+.container .cards:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    transition: var(--transition-ease-3);
+}
+
+.container .cards i {
+    font-size: var(--size-larges);
+}
+
+.container .cards p {
+    font-size: var(--size-medium)
 }
